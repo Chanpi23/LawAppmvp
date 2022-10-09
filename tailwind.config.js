@@ -9,6 +9,6 @@ module.exports = {
   plugins: [require("daisyUi")],
 
   daisyUi:{
-    themes:["retro","dark"]
+    themes:["retro"]
   },
 }
