@@ -5,6 +5,8 @@ const homeController = require("../controllers/home");
 const postsController = require("../controllers/posts");
 const aboutController= require("../controllers/aboutus");
 const companyController= require("../controllers/company");
+const featuresController= require("../controllers/features");
+
 const { ensureAuth, ensureGuest } = require("../middleware/auth");
 
 //Main Routes - simplified for now
@@ -21,7 +23,8 @@ router.get("/signup", authController.getSignup);
 router.post("/signup", authController.postSignup);
 router.get("/company",companyController.getCompany);
 router.post("/company",companyController.postCompany);
-
+router.get("/features",featuresController.getFeatures);
+router.post("/features",featuresController.postFeatures);
 
 
 

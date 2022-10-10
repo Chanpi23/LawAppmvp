@@ -3,18 +3,18 @@ const Post = require("../models/Post");
 const Comment = require("../models/Comment");
 
 module.exports = {
-  getCompany: async (req, res) => {
+  getFeatures: async (req, res) => {
     try {
    
-      res.render("company.ejs");
+      res.render("features.ejs");
     } catch (err) {
       console.log(err);
     }
   },
-  postCompany: async (req, res) => {
+  postFeatures: async (req, res) => {
     try {
      
-      res.render("company.ejs");
+      res.render("features.ejs");
     } catch (err) {
       console.log(err);
     }
