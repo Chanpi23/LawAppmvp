@@ -13,7 +13,12 @@ router.get("/feed", ensureAuth, postsController.getFeed);
 router.get("/login", authController.getLogin);
 router.post("/login", authController.postLogin);
 router.get("/logout", authController.logout);
+router.get("/about", authController.getAbout);
+router.post("/about", authController.postAbout);
 router.get("/signup", authController.getSignup);
 router.post("/signup", authController.postSignup);
+
+
+
 
 module.exports = router;
