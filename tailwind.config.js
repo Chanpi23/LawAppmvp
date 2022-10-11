@@ -6,7 +6,7 @@ module.exports = {
       colors: {}
     },
   },
-  plugins: [require("daisyUi")],
+  plugins: [require("daisyUi"),require('@tailwindcss/forms')], 
 
   daisyUi:{
     themes:["luxury"]

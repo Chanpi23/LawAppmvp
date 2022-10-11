@@ -6,7 +6,7 @@ const postsController = require("../controllers/posts");
 const aboutController= require("../controllers/aboutus");
 const companyController= require("../controllers/company");
 const featuresController= require("../controllers/features");
-
+const productController = require ("../controllers/product");
 const { ensureAuth, ensureGuest } = require("../middleware/auth");
 
 //Main Routes - simplified for now
@@ -25,6 +25,9 @@ router.get("/company",companyController.getCompany);
 router.post("/company",companyController.postCompany);
 router.get("/features",featuresController.getFeatures);
 router.post("/features",featuresController.postFeatures);
+router.get("/product",productController.getProduct);
+router.post("/product",productController.postProduct);
+
 
 
 
